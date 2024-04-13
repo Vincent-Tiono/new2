@@ -1,0 +1,51 @@
+<!-- Main Entry Point to the Github Static Page -->
+
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <title>NTU 台大餐廳隨機選擇器</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="./frontend/style.css">
+        <!-- Leaflet -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+        crossorigin=""/>
+    </head>
+    <body>
+        <img src="https://www.webpagescreenshot.info/image-url/zn-TwpRk3" alt="meme" width="0" height="0">
+        <div id="main">
+            <h2>NTU 台大餐廳隨機選擇器</h2>
+            <div id="intro">
+                <p>你，每次吃飯都會選擇困難嗎？</p>
+                <p>從水源市場走到台大正門再走回水源市場還是找不到自己要吃什麼嗎？</p>
+                <p>輸入你想去的地方、選擇你想要的風格，系統會幫你隨機排序，幫你完成這個困擾你每一天的選擇！
+            </div>
+            <br>
+            <div id="form">
+                <label for="genre">餐廳類別：</label>
+                <select name="genre" id="genre">
+                </select>
+                &nbsp;&nbsp; 
+                <label for="location">餐廳位置：</label>
+                <select name="location" id="location">
+                </select>
+                &nbsp;&nbsp; 
+                <button id="submit">🔎</button>
+            </div>
+            <br>
+            <div id="disclaimer">註：地圖位置不一定準確，詳細內容請點擊下方卡片餐廳名稱連結進入 Google Maps 查看</div>
+            <div id="map"></div>
+            <div id="container"></div>
+        </div>
+        <br>
+        <a href="https://github.com/pcwu2022/ntufood">Contribute to us on Github</a>
+        
+        <!-- Leaflet -->
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+        crossorigin=""></script>
+
+        <script type="module" src="./frontend/script.js"></script>
+    </body>
+</html>
